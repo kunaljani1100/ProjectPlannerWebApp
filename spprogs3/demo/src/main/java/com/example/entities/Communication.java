@@ -1,8 +1,8 @@
 package com.example.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import org.bson.codecs.pojo.annotations.BsonProperty;
+//import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+//import com.fasterxml.jackson.annotation.JsonProperty;
+//import org.bson.codecs.pojo.annotations.BsonProperty;
 
 import java.util.Date;
 
