@@ -7,16 +7,22 @@
 <body>
 <h1>Form</h1>
 <form action="#" th:action="@{/person}" th:object="${person}" method="post">
-    <input type="radio" id="student" name="gender" value="student">
+
+    <input type="radio" id="student" name="student" th:field="*{type}" value="student">
     <label for="student">Student</label><br>
-    <input type="radio" id="faculty_advisor" name="gender" value="faculty_advisor">
+    <input type="radio" id="faculty_advisor" name="faculty_advisor" th:field="*{type}" value="faculty_advisor">
     <label for="faculty_advisor">Faculty advisor</label><br>
-    <input type="radio" id="manager" name="gender" value="manager">
+    <input type="radio" id="manager" name="manager" th:field="*{type}" value="manager">
     <label for="manager">Manager</label>
-    <input type="radio" id="other" name="gender" value="partner">
-    <label for="other">Other</label>
-    <p>Type: <input type="radio" th:field="*{type}" /></p>
-    <p>Name: <input type="text" th:field="*{content}" /></p>
+    <input type="radio" id="partner" name="partner" th:field="*{type}" value="partner">
+    <label for="partner">Partner</label>
+
+    <p>Name: <input type="name" th:field="*{name}" /></p>
+
+    <p>Profile: <input type="profile" th:field="*{profile}" /></p>
+
+    <p>Email Id: <input type="email_id" th:field="*{email_id}" /></p>
+
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
 </body>
